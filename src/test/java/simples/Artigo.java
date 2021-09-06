@@ -47,7 +47,7 @@ public class Artigo {
 
     @After   // Depois do Teste
     public void finalizar(){
-        //driver.quit();
+        driver.quit();
 
     }
 }
