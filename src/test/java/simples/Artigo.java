@@ -35,8 +35,10 @@ public class Artigo {
         driver.get(url);
 
         // Pesquisar por "Ovo de Páscoa"
-        driver.findElement(By.id("searchInput")).sendKeys("Ovo de Páscoa" + Keys.ENTER);
+        //driver.findElement(By.id("searchInput")).sendKeys("Ovo de Páscoa" + Keys.ENTER);
         //driver.findElement(By.id("searchButton")).click();
+        driver.findElement(By.id("searchInput")).sendKeys("Ovo de Páscoa" + Keys.ENTER);
+        //driver.findElement(By.cssSelector("wvui-button")).click();
 
         // Validar o titulo da pagina de retorno
        //assertEquals("Ovo de Páscoa - Wikipédia, a enciclopédia livre", driver.getTitle()); //import AssertEquals static method
@@ -45,7 +47,7 @@ public class Artigo {
 
     @After   // Depois do Teste
     public void finalizar(){
-        driver.quit();
+        //driver.quit();
 
     }
 }
