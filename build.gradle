@@ -28,6 +28,6 @@ dependencies {
         include '**/Runner*'
     }
 
-    task somekeTest(type: Test){
+    task smokeTest(type: Test){
         include '**/Runner*'
         exclude '**/RunnerBackup*'}
